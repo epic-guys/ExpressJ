@@ -2,6 +2,8 @@ package org.EpicGuys.ExpressJ;
 
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 public class BasicHTTPServer implements HTTPServer {
     /*
@@ -33,4 +35,9 @@ public class BasicHTTPServer implements HTTPServer {
     public void stop() throws IOException {
         serverSocketRunnable.stop();
     }
+
+    //public void get(String path, BiConsumer<HTTPRequest, HTTPResponse> handler)
+    //{
+    //    
+    //}
 }
